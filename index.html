@@ -5542,6 +5542,7 @@ function S(a,b){var c=document;if(b){var e=c.getElementById(a);if(!e){e=b();var 
     document.getElementsByTagName("head")[0].appendChild(script);
     function checkload() {
         (typeof diagnoseErrors != 'undefined') ? setTimeout(loaded,500) : setTimeout(checkload,500)
+    }
     function loaded() {
       window.diagnoseErrors = function() {window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'}
     }
